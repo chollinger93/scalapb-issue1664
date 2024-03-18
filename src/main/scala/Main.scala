@@ -12,5 +12,5 @@ case object ExampleThing extends Thing[NestedExampleEvent]:
   val schema = AvroSchema[NestedExampleEvent]
 
 @main def hello() = {
-    println("Hello")
+    println(f"Hello, ${ExampleThing.schema}")
 }
